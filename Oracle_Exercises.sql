@@ -54,7 +54,7 @@ where ename like '__R%';
 
 -- 13. 이름에 A 와 E 를 모두 포함하고 있는 사원의 이름을 표시하시오. 
 select ename from employee
-where ename like '%A%E%';
+where ename like '%A%' and ename like '%E%';
 
 -- 14. 담당 업무가 사무원(CLERK) 또는 영업사원(SALESMAN)이며서 급여가 $1600, $950, 또는 $1300 이 아닌 사원의 이름, 담당업무, 급여를 출력하시오. 
 select ename, job, salary from employee
